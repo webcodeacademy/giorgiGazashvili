@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>TS-TechShop</title>
+    <link rel="icon" href="TSicon.ico">
+</head>
+<body>
+    <header>
+        <div class="navcontainer">
+            <h1><a href="index.html">TechShop</a></h1>
+            <nav id="nav" class="nav"></nav>
+            
+            <div class="tools">
+                <img src="imgs/searchicon.png" alt="searchicon">
+                <a href="index.html"><img src="imgs/arrowsicon.png" alt="arrowsicon">
+                </a>
+                <a href="#"><img src="imgs/staricon.png" alt="favourites">
+                </a>
+            </div>
+
+        </div>
+    </header>
+    <main>
+
+        <div class="computerscontainer">
+            <article>
+                <section>
+                    <img src="imgs/consolesimg-removebg-preview.png" alt="psandxbox">
+                    <h2>ახალი სათამაშო კონსოლები</h2>
+                    <p>"დაათვალიერე ახალი კონსოლები, ჯოისტიკები
+                        თამაშის დისკები და აქსესუარები."
+                    </p>
+                    <a href="#">დათვალიერება</a>
+                </section>
+            </article>
+
+            <article>
+                <section>
+                    <img src="imgs/gamingpcimg-removebg-preview.png" alt="bestgamingpc">
+                    <h2>ახალი სათამაშო კეისები</h2>
+                    <p>"მძლავრი სათამაშო კეისები,ახალი და მძლავრი ნაწილებით."
+                    </p>
+                    <a href="#">დათვალიერება</a>
+                </section>
+            </article>
+
+            <article>
+                <section>
+                    <img src="imgs/laptopimg.png" alt="psandxbox">
+                    <h2>სათამაშო და საოფისე ლეპტოპები</h2>
+                    <p>"ლეპტოპების ფართო არჩევანი საოფისე და სათამაშო გამოყენებისთვის."
+                    </p>
+                    <a href="#">დათვალიერება</a>
+                </section>
+            </article>
+
+            <article>
+                <section>
+                    <img src="imgs/retrogamingimg.png" alt="psandxbox">
+                    <h2>რეტრო სათამაშო კონსოლები</h2>
+                    <p>"რეტრო სტილის სათამაშო კონსოლების 
+                       ფართო არჩევანი."
+                    </p>
+                    <a href="retroconsoles.html">დათვალიერება</a>
+                </section>
+            </article>
+        </div>
+
+        <div id="chatopenerbutton" class="chatbox" onclick="showchat()">
+            <img src="imgs/chatboxicon.png" alt="chaticon">
+            <p>მოგვწერეთ</p>
+        </div>
+        <div id="messagebox" class="messagebox">
+            <div class="chatheader">
+                <p>მოგვწერეთ შეტყობინება</p>
+                <p onclick="closechat()" class="close">&#x2715</p>
+            </div>
+            <div class="chatmain">
+                <input type="text" name="fullname" id="fullname" placeholder="თქვენი სახელი და გვარი">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="თქვენი შეტყობინება"></textarea>
+                <p onclick="closechat()" class="send">გაგზავნა</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="imgs/contactus.png" alt="contacticon">
+        <h3>მისამართი:
+            <p>ქ.მცხეთა თუფაქ შაქურის ნომერი 17</p>
+        </h3>
+        <h4>გვერდები
+            <ul>
+                <li><a href="#">მთავარი</a></li>
+                <li><a href="#">პროდუქცია</a></li>
+                <li><a href="#">ჩვენს შესახებ</a></li>
+                <li><a href="#">წესები და პირობები</a></li>
+                <li><a href="#">კონტაქტი</a></li>
+                <li><a href="#">პირობები და ვადები</a></li>
+                <li><a href="#">გარანტია</a></li>
+                <li><a href="#">ჩემი ანგარიში</a></li>
+            </ul>
+        </h4>
+        <div class="socials">
+            <div class="sms"><a href="#"></a></div>
+            <div class="whatsapp"><a href="#"></a></div>
+            <div class="fb"><a href="#"></a></div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
